@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="459.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.customer.BookingHistoryController">
+   <children>
+      <Label layoutX="169.0" layoutY="14.0" text="BOOKING HISTORY">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="12.0" layoutY="79.0" prefHeight="330.0" prefWidth="615.0">
+         <content>
+            <TableView fx:id="historyTable" prefHeight="355.0" prefWidth="600.0">
+              <columns>
+                <TableColumn fx:id="cCarId" prefWidth="77.60000306367874" text="CAR ID" />
+                  <TableColumn fx:id="cCarName" prefWidth="136.79998779296875" text="CAR NAME" />
+                <TableColumn fx:id="cPickup" minWidth="1.60003662109375" prefWidth="104.80000305175781" text="PICKUP DATE" />
+                  <TableColumn fx:id="cReturn" prefWidth="100.0" text="RETURN DATE" />
+                  <TableColumn fx:id="cRent" prefWidth="99.20001220703125" text="RENT PRICE" />
+                  <TableColumn fx:id="cStatus" prefWidth="80.800048828125" text="STATUS" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      
+   </children>
+</AnchorPane>
